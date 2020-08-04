@@ -1,0 +1,15 @@
+---
+  - name: General Configuration
+    hosts: routers
+    tasks:
+            - name: Add Banner
+              ios_banner:
+                banner: login
+                text: |
+                      How are you doing
+                state: absent
+
+            - name: Add loopback
+              ios_interface:
+                name: Loopback21
+                state: absent  
