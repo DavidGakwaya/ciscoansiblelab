@@ -1,13 +1,13 @@
 ---
   - name: General Configuration
-    hosts: routers
+    hosts: V_cisco_routers
     tasks:
             - name: Add Banner
               ios_banner:
                 banner: login
                 text: |
                       How are you doing
-                state: absent
+                state: present
 
             - name: Add loopback
               ios_interface:
