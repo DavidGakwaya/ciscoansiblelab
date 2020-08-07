@@ -1,6 +1,6 @@
 ---
   - name: General Configuration
-    hosts: ios-xe-mgmt.cisco.com
+    hosts: ios-xe-mgmt-latest.cisco.com
     tasks:
             - name: Add Banner
               ios_banner:
